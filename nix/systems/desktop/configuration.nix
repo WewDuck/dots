@@ -1,0 +1,267 @@
+{ config, lib, pkgs, ... }:
+
+{
+  imports =
+    [ # Include the results of the hardware scan.
+      ./hardware-configuration.nix
+    ];
+
+  
+  # Set Linux Kernel Version.
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # Experimental Features.
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+  
+  # Allow broken packages
+  #  nixpkgs.config.allowBroken = true;
+  
+  # Set systemd timeout
+  systemd.extraConfig = ''
+  DefaultTimeoutStopSec=10s
+'';
+
+  # Use the EFI boot loader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+    
+  # Networking 
+  networking.hostName = "desktop"; # Define your hostname.
+  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+
+  # Set your time zone.
+   time.timeZone = "Europe/Amsterdam";
+
+  # Select internationalisation properties.
+   i18n.defaultLocale = "en_US.UTF-8";
+  # console = {
+  #   font = "Lat2-Terminus16";
+  #   keyMap = "us";
+  #   useXkbConfig = true; # use xkb.options in tty.
+  # };
+   i18n.extraLocaleSettings = {
+	LC_ADDRESS = "nl_NL.UTF-8";
+	LC_IDENTIFICATION = "nl_NL.UTF-8";
+	LC_MEASUREMENT = "nl_NL.UTF-8";
+	LC_MONETARY = "nl_NL.UTF-8";
+	LC_NAME = "nl_NL.UTF-8";
+	LC_NUMERIC = "nl_NL.UTF-8";
+	LC_PAPER = "nl_NL.UTF-8";
+	LC_TELEPHONE = "nl_NL.UTF-8";
+	LC_TIME = "en_GB.UTF-8";
+  };
+   
+
+  # Fonts
+  fonts.packages = with pkgs; [
+  (nerdfonts.override { fonts = [ "FiraMono" "RobotoMono" ]; })
+ ];
+
+  # Enable the X11 windowing system.
+   services.xserver = {
+   enable = true;
+   excludePackages = with pkgs; [
+   xterm
+   ];
+};
+
+  # Declare Session Variables
+  environment.sessionVariables = {
+  #NIXOS_OZONE_WL = "1";
+  #WLR_NO_HARDWARE_CURSORS = "1";
+  #MOZ_ENABLE_WAYLAND = "1";
+ };
+
+  # Enable the KDE Plasma Desktop.
+  services.xserver.desktopManager.plasma5.enable = true;
+  # services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.sddm.enable = true; 
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+	khelpcenter
+	oxygen	
+  ];
+
+  # Enable QMK
+  hardware.keyboard.qmk.enable = true;
+
+  # Enable OpenGL
+   hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
+  hardware.opengl.extraPackages = with pkgs; [
+    vaapiVdpau
+  ];
+   #  Load nvidia driver for Xorg and Wayland
+   services.xserver.videoDrivers = ["nvidia"];
+ 
+ # Configure keymap in X11
+   services.xserver.xkb.layout = "us";
+ #  services.xserver.xkb.options = "eurosign:e,caps:escape";
+
+  # Enable CUPS to print documents.
+   services.printing.enable = true;
+
+  # Enable sound
+   sound.enable = true;
+   security.rtkit.enable = true;
+   services.pipewire = {
+	enable = true;
+	alsa.enable = true;
+	alsa.support32Bit = true;
+	pulse.enable = true;
+	jack.enable = true;
+  };
+
+  # Virtualisation
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
+
+  # Enable touchpad support (enabled default in most desktopManager).
+  # services.xserver.libinput.enable = true;
+
+    # Shell configs
+  users.defaultUserShell = pkgs.fish;
+
+  # Fish shell
+  programs.fish = {
+    enable=true;
+#    promptInit = ''function fish_prompt
+#    set_color blue
+#    echo -n "["
+#    set_color normal
+#    echo -n (basename $PWD)
+#    set_color blue
+#    echo -n "] "
+#    set_color normal
+#    echo -n "❯ "
+#    set_color normal
+#end
+#'';
+    shellAliases ={
+      l = "ls -Alh";
+      ls = "ls --color=auto";
+      update = "sudo nixos-rebuild switch --flake /home/ib/dots#desktop && git commit && git push origin main";
+      upgrade = "sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d && git commit && git push origin main";
+      clean = "sudo nix-collect-garbage -d";
+      config = "nvim /home/ib/dots/nix/systems/desktop/default.nix";
+      nf = "neofetch";
+     };
+    };
+
+  # Bash Config
+  # programs.bash = {
+  #   shellAliases = {
+  #     l = "ls -alh";
+  #     ll = "ls -l";
+  #     ls = "ls --color=auto";
+  #   };
+  # };
+
+
+    # Define a user account. Don't forget to set a password with ‘passwd’.
+     users.users.ib = {
+       isNormalUser = true;
+       extraGroups = [ "wheel" "libvirt" ]; # Enable ‘sudo’ for the user.
+       packages = with pkgs; [
+    webcord
+    firefox
+    floorp
+    neofetch
+    cava
+    cbonsai
+    cmatrix
+    lavat
+    speedtest-cli
+    pfetch
+    kate
+    kcolorchooser
+    vlc
+    via
+    rpi-imager
+    wl-clipboard
+    xclip
+    minecraft
+       ];
+     };
+
+    # Gaming.
+    programs.steam.enable = true;
+    programs.gamemode.enable = true;
+
+
+    # List packages installed in system profile. 
+   environment.systemPackages = with pkgs; [
+     neovim 
+     kitty
+     krita
+     prismlauncher
+     osu-lazer
+     git
+     htop
+     btop
+     jdk8
+     jdk17
+     kdenlive
+     transmission-qt
+     transmission
+     obs-studio
+     procps
+     python3
+     gcc
+     ripgrep
+     fd
+     lazygit
+     unzip
+     tree
+     wget
+     gh
+   ];
+
+
+  # Some programs need SUID wrappers, can be configured further or are
+  # started in user sessions.
+   programs.mtr.enable = true;
+   programs.gnupg.agent = {
+     enable = true;
+     enableSSHSupport = true;
+   };
+
+  # List services that you want to enable:
+
+  # Enable the OpenSSH daemon.
+   services.openssh.enable = true;
+
+  # Open ports in the firewall.
+  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
+
+
+  # This option defines the first version of NixOS you have installed on this particular machine,
+  # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
+  #
+  # Most users should NEVER change this value after the initial install, for any reason,
+  # even if you've upgraded your system to a new NixOS release.
+  #
+  # This value does NOT affect the Nixpkgs version your packages and OS are pulled from,
+  # so changing it will NOT upgrade your system.
+  #
+  # This value being lower than the current NixOS release does NOT mean your system is
+  # out of date, out of support, or vulnerable.
+  #
+  # Do NOT change this value unless you have manually inspected all the changes it would make to your configuration,
+  # and migrated your data accordingly.
+  #
+  # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
+  system.stateVersion = "23.11"; # Did you read the comment?
+
+}
+
