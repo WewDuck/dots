@@ -10,14 +10,8 @@
   # Set Linux Kernel Version.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # Experimental Features.
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
-  # Allow broken packages
-  #  nixpkgs.config.allowBroken = true;
   
   # Set systemd timeout
   systemd.extraConfig = ''
@@ -102,7 +96,6 @@
  
  # Configure keymap in X11
    services.xserver.xkb.layout = "us";
- #  services.xserver.xkb.options = "eurosign:e,caps:escape";
 
   # Enable CUPS to print documents.
    services.printing.enable = true;
@@ -133,37 +126,18 @@
   programs.fish = {
     enable=true;
 #    promptInit = ''function fish_prompt
-#    set_color blue
-#    echo -n "["
-#    set_color normal
-#    echo -n (basename $PWD)
-#    set_color blue
-#    echo -n "] "
-#    set_color normal
-#    echo -n "❯ "
-#    set_color normal
 #end
 #'';
     shellAliases ={
       l = "ls -Alh";
       ls = "ls --color=auto";
-      update = "sudo nixos-rebuild switch --flake /home/ib/dots#desktop && git commit && git push origin main";
-      upgrade = "sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d && git commit && git push origin main";
+      update = "git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
+      upgrade = "git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
       clean = "sudo nix-collect-garbage -d";
-      config = "nvim /home/ib/dots/nix/systems/desktop/default.nix";
+      config = "nvim /home/ib/dots/nix/systems/desktop/configuration.nix";
       nf = "neofetch";
      };
     };
-
-  # Bash Config
-  # programs.bash = {
-  #   shellAliases = {
-  #     l = "ls -alh";
-  #     ll = "ls -l";
-  #     ls = "ls --color=auto";
-  #   };
-  # };
-
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
      users.users.ib = {
@@ -187,14 +161,12 @@
     rpi-imager
     wl-clipboard
     xclip
-    minecraft
        ];
      };
 
     # Gaming.
     programs.steam.enable = true;
     programs.gamemode.enable = true;
-
 
     # List packages installed in system profile. 
    environment.systemPackages = with pkgs; [
