@@ -14,9 +14,10 @@
   nixpkgs.config.allowUnfree = true;
   
   # Set systemd timeout
-  systemd.extraConfig = ''
+  systemd.extraConfig = "
   DefaultTimeoutStopSec=10s
-'';
+  DefaultTimeoutStartSec=10s
+";
 
   # Use the EFI boot loader.
   boot.loader.systemd-boot.enable = true;
