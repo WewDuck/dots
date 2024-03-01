@@ -188,6 +188,7 @@
      jdk8
      jdk17
      kdenlive
+     mlt
      transmission-qt
      transmission
      obs-studio
