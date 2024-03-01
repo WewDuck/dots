@@ -130,8 +130,8 @@
     shellAliases ={
       l = "ls -Alh";
       ls = "ls --color=auto";
-      update = "git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
-      upgrade = "git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
+      update = "cd /home/ib/dots && git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
+      upgrade = "cd /home/ib/dots && git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
       clean = "sudo nix-collect-garbage -d";
       config = "nvim /home/ib/dots/nix/systems/desktop/configuration.nix";
       nf = "neofetch";
@@ -162,6 +162,7 @@
     xclip
     tldr
     catppuccin-kde
+    catppuccin
        ];
      };
 
