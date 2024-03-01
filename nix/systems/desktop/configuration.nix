@@ -160,6 +160,8 @@
     rpi-imager
     wl-clipboard
     xclip
+    tldr
+    catppuccin-kde
        ];
      };
 
