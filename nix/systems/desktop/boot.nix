@@ -11,5 +11,5 @@
       efiSupport = true;
       useOSProber = true;
     };
-  }
+  };
 }
