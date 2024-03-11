@@ -72,8 +72,8 @@
 
   # Enable the KDE Plasma Desktop.
   services.xserver.desktopManager.plasma6.enable = true;
-  # services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.sddm.enable = true; 
+   services.xserver.displayManager.gdm.enable = true;
+  # services.xserver.displayManager.sddm.enable = true; 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
 	khelpcenter
   ];
@@ -129,14 +129,11 @@
   # Fish shell
   programs.fish = {
     enable=true;
-#    promptInit = ''function fish_prompt
-#end
-#'';
     shellAliases ={
       l = "ls -Alh";
       ls = "ls --color=auto";
-      update = "cd /home/ib/dots && git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
-      upgrade = "cd /home/ib/dots && git add . && git commit && git push && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
+      update = "cd /home/ib/dots && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
+      upgrade = "cd /home/ib/dots && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
       clean = "sudo nix-collect-garbage -d";
       config = "nvim /home/ib/dots/nix/systems/desktop/configuration.nix";
       nf = "neofetch";
@@ -166,8 +163,7 @@
     wl-clipboard
     xclip
     tldr
-    catppuccin-kde
-    catppuccin
+    typioca
        ];
      };
 
