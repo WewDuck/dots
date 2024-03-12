@@ -16,4 +16,5 @@
       osu-lazer
       wineWowPackages.staging
     ];
+  };
 }
