@@ -14,5 +14,6 @@
       prismlauncher
       minecraft
       osu-lazer
+      wineWowPackages.staging
     ];
 }
