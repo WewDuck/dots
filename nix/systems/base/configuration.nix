@@ -88,16 +88,6 @@
     driSupport32Bit = true;
   };
 
-  hardware.opengl.extraPackages = with pkgs; [
-    vaapiVdpau
-  ];
-   #  Load nvidia driver for Xorg and Wayland
-   services.xserver.videoDrivers = ["nvidia"];
-    hardware.nvidia = {
-      modesetting.enable = true;
-      open = true;
-    };
- 
  # Configure keymap in X11
    services.xserver.xkb.layout = "us";
 
@@ -145,7 +135,7 @@
        isNormalUser = true;
        extraGroups = [ "wheel" "libvirt" ]; # Enable ‘sudo’ for the user.
        packages = with pkgs; [
-    webcord
+    armcord
     firefox
     floorp
     neofetch
