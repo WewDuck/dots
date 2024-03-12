@@ -167,17 +167,11 @@
        ];
      };
 
-    # Gaming.
-    programs.steam.enable = true;
-    programs.gamemode.enable = true;
-
     # List packages installed in system profile. 
    environment.systemPackages = with pkgs; [
      neovim 
      kitty
      krita
-     prismlauncher
-     osu-lazer
      git
      htop
      btop
