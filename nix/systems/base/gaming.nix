@@ -2,10 +2,10 @@
 {
   programs = {
     steam = {
-      enable = true
+      enable = true;
     };
     gamemode = {
-      enable = true
+      enable = true;
     };
   };
 
