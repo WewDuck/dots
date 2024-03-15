@@ -1,4 +1,4 @@
-{ config, pkgs, ... }
+{ config, pkgs, ... }:
 {
   # Declare Session Variables
   environment.sessionVariables = {
