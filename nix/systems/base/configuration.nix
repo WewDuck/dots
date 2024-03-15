@@ -5,27 +5,15 @@
     [ # Include the results of the hardware scan.
       #./hardware-configuration.nix
     ];
-
   
   # Set Linux Kernel Version.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
-  # Set systemd timeout
-  systemd.extraConfig = "
-  DefaultTimeoutStopSec=10s
-  DefaultTimeoutStartSec=10s
-";
-
-  # Use the EFI boot loader.
-#  boot.loader.systemd-boot.enable = true;
-#  boot.loader.efi.canTouchEfiVariables = true;
-    
+ 
   # Networking 
-  networking.hostName = "desktop"; # Define your hostname.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; 
 
   # Set your time zone.
    time.timeZone = "Europe/Amsterdam";
@@ -87,6 +75,9 @@
     driSupport = true;
     driSupport32Bit = true;
   };
+hardware.opengl.extraPackages = with pkgs; [
+    vaapiVdpau
+  ];
 
  # Configure keymap in X11
    services.xserver.xkb.layout = "us";

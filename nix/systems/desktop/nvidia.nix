@@ -6,5 +6,4 @@
       modesetting.enable = true;
       open = true;
     };
-
 }
