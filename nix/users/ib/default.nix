@@ -1,7 +1,14 @@
 { ... }:
 {
   programs.home-manager.enable = true;
-  home.username = "ib"
-  home.homeDirectory = "/home/ib" 
-  home.stateVersion = "23.11";
+  home = {
+    username = "ib";
+    homeDirectory = "/home/ib"; 
+    stateVersion = "23.11"; 
+  };
+
+  imports = [
+    ./themes/default.nix
+  ];
+
 }
