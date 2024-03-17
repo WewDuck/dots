@@ -2,6 +2,7 @@
 {
   gtk = {
     enable = true;
+
     iconTheme = {
       name = "Tela-Purple-Dark";
       package = pkgs.tela-icon-theme;
