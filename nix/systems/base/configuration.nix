@@ -176,6 +176,7 @@ hardware.opengl.extraPackages = with pkgs; [
      tree
      wget
      gh
+     tigervnc
    ];
 
 
