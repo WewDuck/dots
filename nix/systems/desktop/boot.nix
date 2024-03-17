@@ -13,4 +13,10 @@
       gfxmodeEfi = "1920x1080";
     };
   };
+
+    # Set systemd timeout
+  systemd.extraConfig = "
+  DefaultTimeoutStopSec=10s
+  DefaultTimeoutStartSec=10s
+";
 }

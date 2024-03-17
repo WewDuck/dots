@@ -9,4 +9,8 @@
 	./hardware-configuration.nix
 	./boot.nix
       ];
-  } 
+
+        # Hostname 
+        networking.hostName = "desktop"; 
+  }
+
