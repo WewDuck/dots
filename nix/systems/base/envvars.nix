@@ -2,14 +2,14 @@
 {
   # Declare Session Variables
   environment.sessionVariables = {
-  #NIXOS_OZONE_WL = "1";
-  #WLR_NO_HARDWARE_CURSORS = "1";
-  #MOZ_ENABLE_WAYLAND = "1";
+    TERM = "xterm-256color";
+    EDITOR = "neovim";
  };
 
  # Declare Environment Variables
  environment.variables = {
-    TERM = "xterm-256color";    
+    TERM = "xterm-256color";
+    EDITOR = "neovim";
  };
 }
 
