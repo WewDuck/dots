@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -177,6 +177,7 @@ hardware.opengl.extraPackages = with pkgs; [
      wget
      gh
      tigervnc
+     rar
    ];
 
 
