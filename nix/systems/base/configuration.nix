@@ -6,8 +6,6 @@
       #./hardware-configuration.nix
     ];
   
-  # Set Linux Kernel Version.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
