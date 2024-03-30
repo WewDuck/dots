@@ -19,4 +19,7 @@
   DefaultTimeoutStopSec=10s
   DefaultTimeoutStartSec=10s
 ";
+  
+  # Set Linux Kernel Version.
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 }
