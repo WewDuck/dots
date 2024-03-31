@@ -119,6 +119,7 @@ hardware.opengl.extraPackages = with pkgs; [
       clean = "sudo nix-collect-garbage -d";
       config = "nvim /home/ib/dots/nix/systems/desktop/configuration.nix";
       nf = "neofetch";
+      ssh = "kitten ssh";
      };
     };
 
