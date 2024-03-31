@@ -176,6 +176,7 @@ hardware.opengl.extraPackages = with pkgs; [
      gh
      tigervnc
      rar
+     nicotine-plus
    ];
 
 
