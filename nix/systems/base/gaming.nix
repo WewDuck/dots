@@ -15,6 +15,9 @@
       minecraft
       osu-lazer
       wineWowPackages.staging
+      gzdoom
+      nxengine-evo
+      mangohud
     ];
   };
 }
