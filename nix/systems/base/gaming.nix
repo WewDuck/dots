@@ -16,7 +16,7 @@
       osu-lazer
       wineWowPackages.staging
       gzdoom
-      nxengine-evo
+#     nxengine-evo
       mangohud
     ];
   };
