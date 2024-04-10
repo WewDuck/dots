@@ -178,6 +178,7 @@ hardware.opengl.extraPackages = with pkgs; [
      tigervnc
      rar
      nicotine-plus
+     p7zip
    ];
 
 
