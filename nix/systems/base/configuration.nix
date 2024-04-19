@@ -179,6 +179,7 @@ hardware.opengl.extraPackages = with pkgs; [
      rar
      nicotine-plus
      p7zip
+     go
    ];
 
 
