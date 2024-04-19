@@ -38,7 +38,7 @@
 
   # Fonts
   fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraMono" "RobotoMono" "SourceCodePro" "MesloLG" ]; })
+  (nerdfonts.override { fonts = [ "FiraMono" "RobotoMono" "SourceCodePro" "Meslo" ]; })
  ];
 
   # Enable the X11 windowing system.
