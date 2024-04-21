@@ -6,12 +6,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    xremap-flake.url = "github:xremap/nix-flake";
+    xremap.url = "github:xremap/nix-flake";
     
-    nh.flake.url = "github:viperml/nh";
+    nh.url = "github:viperml/nh";
   };
 
-  outputs = {  self, nixpkgs, home-manager, ... }@inputs:
+  outputs = {  self, nixpkgs, home-manager, nh, xremap, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
