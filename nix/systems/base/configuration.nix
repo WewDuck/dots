@@ -114,10 +114,10 @@ hardware.opengl.extraPackages = with pkgs; [
     shellAliases ={
       l = "ls -Alh";
       ls = "ls --color=auto";
-      update = "cd /home/ib/dots && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
-      upgrade = "cd /home/ib/dots && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
-      clean = "sudo nix-collect-garbage -d";
-      config = "nvim /home/ib/dots/nix/systems/desktop/configuration.nix";
+     # update = "cd /home/ib/dots && sudo nixos-rebuild switch --flake /home/ib/dots#desktop";
+     # upgrade = "cd /home/ib/dots && sudo nixos-rebuild switch --flake /home/ib/dots#desktop --upgrade && sudo nix-collect-garbage -d";
+     # clean = "sudo nix-collect-garbage -d";
+     # config = "nvim /home/ib/dots/nix/systems/desktop/configuration.nix";
       nf = "neofetch";
 #     ssh = "kitten ssh";
      };
