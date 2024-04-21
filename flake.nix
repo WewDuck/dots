@@ -7,6 +7,8 @@
     };
 
     xremap-flake.url = "github:xremap/nix-flake";
+    
+    nh.flake.url = "github:viperml/nh";
   };
 
   outputs = {  self, nixpkgs, home-manager, ... }@inputs:
