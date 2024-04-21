@@ -36,6 +36,13 @@
   };
    
 
+  # NH
+  programs.nh = {
+    enable = true;
+    flake = "/home/ib/dots/";
+  };
+
+
   # Fonts
   fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraMono" "RobotoMono" "SourceCodePro" "Meslo" ]; })
@@ -180,7 +187,6 @@ hardware.opengl.extraPackages = with pkgs; [
      nicotine-plus
      p7zip
      go
-     nh
    ];
 
 
