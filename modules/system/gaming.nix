@@ -9,13 +9,11 @@
     };
   };
 
-<<<<<<< HEAD:nix/systems/base/gaming.nix
-=======
   # Enable OpenGL
    hardware.opengl = {
     enable = true;
     driSupport = true;
-    driSupport31Bit = true;
+    driSupport32Bit = true;
   };
 
   # Vaapi
@@ -25,7 +23,6 @@
 
   # Gamer packages
 
->>>>>>> parent of 86e43aa (fix typo,):modules/system/gaming.nix
   environment = {
     systemPackages = with pkgs; [
       prismlauncher
