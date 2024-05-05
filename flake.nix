@@ -23,7 +23,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           # Import home-manager profile
-          ./nix/users/ib     
+          ./users/ib     
           # Enable flakes and nix command
           { nix = { package = pkgs.nix; settings.experimental-features = [ "nix-command" "flakes" ];}; }
           # Pin registry to flake
@@ -39,7 +39,7 @@
         specialArgs = { inherit inputs; }; 
         modules = [
           # Import system profile
-          ./nix/systems/desktop
+          ./hosts/desktop
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake
@@ -53,7 +53,7 @@
         specialArgs = { inherit inputs; }; 
         modules = [
           # Import system profile
-          ./nix/systems/ip
+          ./hosts/ip
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake

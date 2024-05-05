@@ -1,7 +1,0 @@
-{ pkgs, ... }:
-{
-  imports = [
-    ./gtk.nix
-  ];
-
-}
