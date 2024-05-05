@@ -13,7 +13,7 @@
    hardware.opengl = {
     enable = true;
     driSupport = true;
-    driSupport31Bit = true;
+    driSupport32Bit = true;
   };
 
   # Vaapi
