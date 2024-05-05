@@ -2,12 +2,12 @@
   {
     # Imports
       imports = [
-	~/dots/modules/system/etc.nix
-	~/dots/modules/system/gaming.nix
-	~/dots/modules/system/localization.nix
-	~/dots/modules/system/nvidia.nix
-	~/dots/users/ib/home.nix
-	~/dots/modules/hm/themes/default.nix
+	/home/ib/dots/modules/system/etc.nix
+	/home/ib/dots/modules/system/gaming.nix
+	/home/ib/dots/modules/system/localization.nix
+	/home/ib/dots/modules/system/nvidia.nix
+	/home/ib/dots/users/ib/home.nix
+	/home/ib/dots/modules/hm/themes/default.nix
 	./hardware-configuration.nix
 	./boot.nix
       ];

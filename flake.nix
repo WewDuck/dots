@@ -39,7 +39,7 @@
         specialArgs = { inherit inputs; }; 
         modules = [
           # Import system profile
-          ./hosts/desktop
+          ./hosts/desktop/default.nix
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake
