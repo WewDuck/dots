@@ -80,32 +80,6 @@
      };
     };
 
-    # Define a user account. Don't forget to set a password with ‘passwd’.
-     users.users.ib = {
-       isNormalUser = true;
-       extraGroups = [ "wheel" "libvirt" ];
-       packages = with pkgs; [
-    armcord
-    firefox
-    floorp
-    neofetch
-    cava
-    cbonsai
-    cmatrix
-    lavat
-    speedtest-cli
-    pfetch
-    kate
-    kcolorchooser
-    vlc
-    via
-    rpi-imager
-    wl-clipboard
-    xclip
-    tldr
-    typioca
-       ];
-     };
 
     # Generic packages I want regardless of machine or user
    environment.systemPackages = with pkgs; [
