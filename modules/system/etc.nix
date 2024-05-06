@@ -89,11 +89,13 @@
           firefox
           floorp
           neofetch
+          hyfetch
 	  cava
           cbonsai
           cmatrix
           lavat
-          speedtest-cli
+          ookla-speedtest
+          cfspeedtest
           pfetch
           kate
           kcolorchooser
