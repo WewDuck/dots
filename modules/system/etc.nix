@@ -81,7 +81,7 @@
     };
 
 
-     users.ib = {
+     users.users.ib = {
        isNormalUser = true;
        extraGroups = [ "wheel" "libvirt" ];
        packages = with pkgs; [
