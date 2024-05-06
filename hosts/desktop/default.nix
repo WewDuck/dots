@@ -2,10 +2,10 @@
   {
     # Imports
       imports = [
-	/home/ib/dots/modules/system/etc.nix
-	/home/ib/dots/modules/system/gaming.nix
-	/home/ib/dots/modules/system/localization.nix
-	/home/ib/dots/modules/system/nvidia.nix
+	../../modules/system/etc.nix
+	../../modules/system/gaming.nix
+	../../modules/system/localization.nix
+      	../../modules/system/nvidia.nix
 #	/home/ib/dots/users/ib/home.nix
 #	/home/ib/dots/modules/hm/themes/default.nix
 	./hardware-configuration.nix
