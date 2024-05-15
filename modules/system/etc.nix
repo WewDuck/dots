@@ -126,6 +126,7 @@
      nicotine-plus
      p7zip
      go
+     stow
    ];
 
 
