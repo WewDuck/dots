@@ -26,7 +26,6 @@
   environment = {
     systemPackages = with pkgs; [
       prismlauncher
-      minecraft
       osu-lazer
       wineWowPackages.staging
       gzdoom
