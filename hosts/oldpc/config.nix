@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
 { config, lib, pkgs, ... }:
 
 {
@@ -37,12 +33,6 @@
      packages = with pkgs; [
      ];
    };
-   git = {
-     isNormalUser = true;
-     packages = with pkgs; [
-	gitea
-     ];
-   };
   };
 
    environment.systemPackages = with pkgs; [
@@ -53,8 +43,14 @@
      jdk17_headless
      git
      fastfetch
+     htop
+     btop
    ];
 	
+   services.gitea = {
+	enable = true;
+   };
+
    services.cockpit = {
 	enable = true;
 	openFirewall = true;
