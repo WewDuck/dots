@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
 
 # Shell configs
