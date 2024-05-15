@@ -9,9 +9,11 @@
     xremap.url = "github:xremap/nix-flake";
     
     nh.url = "github:viperml/nh";
+
+    maxfetch.url = "github:jobcmax/maxfetch";
   };
 
-  outputs = {  self, nixpkgs, home-manager, nh, xremap, ... }@inputs:
+  outputs = {  self, nixpkgs, home-manager, nh, xremap, maxfetch, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
