@@ -61,6 +61,7 @@
 	settings = {
 	  UseDns = true;
 	  PermitRootLogin = "no";
+	  PasswordAuthentication = false;
       };
       ports = [ 1337 ];
    }; 
