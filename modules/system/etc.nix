@@ -27,16 +27,8 @@
    ];
 };
 
-  # Enable the KDE Plasma Desktop.
-  services.desktopManager.plasma6.enable = true;
-   services.xserver.displayManager = {
-    gdm.enable = true;
-    defaultSession = "plasmax11";
-  };
-  # services.xserver.displayManager.sddm.enable = true; 
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-	khelpcenter
-  ];
+  services.xserver.displayManager.gdm.enable = true;
+
 
   # Enable QMK
   hardware.keyboard.qmk.enable = true;
@@ -58,6 +50,8 @@
 	pulse.enable = true;
 	jack.enable = true;
   };
+
+  hardware.pulseaudio.enable = false;
 
   # Virtualisation
   virtualisation.libvirtd.enable = true;

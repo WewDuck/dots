@@ -3,6 +3,9 @@
   programs = {
     steam = {
       enable = true;
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
     };
     gamemode = {
       enable = true;
@@ -27,7 +30,7 @@
     systemPackages = with pkgs; [
       prismlauncher
       osu-lazer
-      wineWowPackages.staging
+      wineWowPackages.stagingFull
       gzdoom
 #     nxengine-evo
       mangohud

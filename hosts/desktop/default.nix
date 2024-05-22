@@ -3,6 +3,7 @@
     # Imports
       imports = [
 	../../modules/system/etc.nix
+	../../modules/system/kde.nix
 	../../modules/system/gaming.nix
 	../../modules/system/localization.nix
       	../../modules/system/nvidia.nix
