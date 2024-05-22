@@ -51,6 +51,8 @@
 	jack.enable = true;
   };
 
+  hardware.pulseaudio.enable = false;
+
   # Virtualisation
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
