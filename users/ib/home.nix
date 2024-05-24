@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   
   users.ib = {
@@ -11,26 +11,39 @@
     username = "ib";
     homeDirectory = "/home/ib"; 
     stateVersion = "23.11"; 
-    packages = [
-      armcord
-      firefox
-      floorp
-      neofetch
-      cava
-      cbonsai
-      cmatrix
-      lavat
-      speedtest-cli
-      pfetch
-      kate
-      kcolorchooser
-      vlc
-      via
-      rpi-imager
-      wl-clipboard
-      xclip
-      tldr
-      typioca
+    packages = with pkgs; [
+	  armcord
+          firefox
+          floorp
+          neofetch
+          hyfetch
+	  cava
+          cbonsai
+          cmatrix
+          lavat
+          ookla-speedtest
+          cfspeedtest
+          pfetch
+          kate
+          kcolorchooser
+          vlc
+          via
+          rpi-imager
+          wl-clipboard
+          xclip
+          tldr
+          typioca
+          alacritty
+          foot
+          kitty
+          krita
+          rofi-wayland
+          nicotine-plus
+          kdenlive
+          transmission-qt
+          transmission
+          obs-studio
+
     ];
   };
 
