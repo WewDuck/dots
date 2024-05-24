@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, inputs, username, ... }:
 
 {
   
@@ -11,7 +11,7 @@
   # NH
   programs.nh = {
     enable = true;
-    flake = "/home/${user}/dots/";
+    flake = "/home/${username}/dots/";
   };
 
   # Fonts
