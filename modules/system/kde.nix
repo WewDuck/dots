@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
 
   # Enable the KDE Plasma Desktop.

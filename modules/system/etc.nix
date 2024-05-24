@@ -93,6 +93,8 @@
     # Generic packages I want regardless of machine or user
    environment.systemPackages = with pkgs; [
      neovim 
+     alacritty
+     alacritty-theme
      kitty
      krita
      git
