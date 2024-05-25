@@ -2,7 +2,6 @@
 {
 
 programs = {
-
   sway = {
     enable = true;
     extraOptions = [
