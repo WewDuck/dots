@@ -25,7 +25,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           # Import home-manager profile
-          ./users/ib     
+          ./users/ib/home.nix
           # Enable flakes and nix command
           { nix = { package = pkgs.nix; settings.experimental-features = [ "nix-command" "flakes" ];}; }
           # Pin registry to flake

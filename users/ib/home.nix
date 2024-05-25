@@ -6,18 +6,18 @@
     extraGroups = [ "wheel" "libvirt" ];
   }
 
-  programs.home-manager.enable = true;
-  home = {
-    username = "ib";
-    homeDirectory = "/home/ib"; 
-    stateVersion = "23.11"; 
-    packages = with pkgs; [
-	  armcord
+# programs.home-manager.enable = true;
+# home = {
+#   username = "ib";
+#   homeDirectory = "/home/ib"; 
+#   stateVersion = "23.11"; 
+#   packages = with pkgs; [
+          armcord
           firefox
           floorp
           neofetch
           hyfetch
-	  cava
+          cava
           cbonsai
           cmatrix
           lavat
