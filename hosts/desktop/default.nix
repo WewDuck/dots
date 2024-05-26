@@ -18,7 +18,7 @@
 	./boot.nix
       ];
       
-	programs.nh.flake = "/home/ib/dots/"
+	programs.nh.flake = "/home/ib/dots/";
   
         # Hostname 
         networking.hostName = "desktop"; 
