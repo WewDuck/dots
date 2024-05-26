@@ -42,13 +42,6 @@
         modules = [
           # Import system profile
           ./hosts/desktop/default.nix
-          home-manager.nixosModules.home-manager
-          { 
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.ib = import ./users/ib/home.nix;
-
-          }
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake

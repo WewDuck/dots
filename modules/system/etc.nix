@@ -11,7 +11,6 @@
   # NH
   programs.nh = {
     enable = true;
-    flake = "/home/${username}/dots/";
   };
 
   # Fonts
