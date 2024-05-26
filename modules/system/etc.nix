@@ -45,7 +45,7 @@
      tree
      wget
      gh
-     rlaar
+     rar
      p7zip
      go
      stow
