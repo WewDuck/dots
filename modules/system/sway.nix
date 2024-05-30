@@ -7,6 +7,7 @@ programs = {
     extraOptions = [
       "--unsupported-gpu"
     ];
+    package = pkgs.swayfx;
   };
 
   waybar = {
@@ -17,6 +18,7 @@ programs = {
 
   environment.systemPackages = with pkgs; [
     grimblast
+    qt5ct
   ];
 
 }

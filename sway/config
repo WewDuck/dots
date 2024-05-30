@@ -3,6 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 
+exec systemctl --user set-environment QT_QPA_PLATFORMTHEME=qt5ct
 exec waybar
 
 # Read `man 5 sway` for a complete reference.
