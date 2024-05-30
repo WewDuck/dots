@@ -8,10 +8,6 @@
   # Networking 
   networking.networkmanager.enable = true; 
    
-  # NH
-  programs.nh = {
-    enable = true;
-  };
 
   # Fonts
   fonts.packages = with pkgs; [
