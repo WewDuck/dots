@@ -18,10 +18,6 @@
 	./boot.nix
       ];
 
-        programs.nh = {
-	enable = true;
-	flake = "/home/ib/dots/";
-	};
   
         # Hostname 
         networking.hostName = "desktop"; 

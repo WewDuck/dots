@@ -8,6 +8,11 @@
   # Networking 
   networking.networkmanager.enable = true; 
    
+  programs.nh = {
+    enable = true;
+    flake = "/home/ib/dots/";
+  };
+
 
   # Fonts
   fonts.packages = with pkgs; [
