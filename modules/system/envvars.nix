@@ -1,9 +1,12 @@
 { config, pkgs, ... }:
 {
   # Declare Session Variables
-# environment.sessionVariables = {
-#  TERM = "xterm-256color";
-#   EDITOR = "neovim";
+ environment.sessionVariables = {
+  TERM = "xterm-256color";
+  EDITOR = "neovim";
+  WLR_NO_HARDWARE_CURSORS = "1";
+  QT_QPA_PLATFORMTHEME = "qt5ct";
+
 };
 
  # Declare Environment Variables

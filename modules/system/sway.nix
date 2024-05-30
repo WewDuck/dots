@@ -7,7 +7,6 @@ programs = {
     extraOptions = [
       "--unsupported-gpu"
     ];
-    package = pkgs.swayfx;
   };
 
   waybar = {
