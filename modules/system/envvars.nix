@@ -10,6 +10,7 @@
  environment.variables = {
    EDITOR = "neovim";
    WLR_NO_HARDWARE_CURSORS = "1";
+   QT_QPA_PLATFORMTHEME = "qt5ct";
  };
 }
 
