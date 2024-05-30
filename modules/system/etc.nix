@@ -10,7 +10,7 @@
    
   programs.nh = {
     enable = true;
-    flake = "/home/ib/dots/";
+    flake = "/home/ib/dots";
   };
 
 

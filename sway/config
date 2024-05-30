@@ -32,10 +32,10 @@ seat seat0 xcursor_theme GoogleDot-White 16
 default_border pixel 3
 
 # Property Name                 Border  BG      Text    Indicator   Child-Border
-client.focused                  #62669d #62669d #ffffff #62669d     #62669d
-client.focused_inactive         #27293f #62669d #ffffff #62669d     #27293f
-client.unfocused                #27293f #62669d #ffffff #62669d     #27293f
-client.urgent                   #27293f #62669d #ffffff #62669d     #27293f
+client.focused                  #62669d #62669d #ffffff #27293f     #62669d
+client.focused_inactive         #27293f #62669d #ffffff #27293f     #27293f
+client.unfocused                #27293f #62669d #ffffff #27293f     #27293f
+client.urgent                   #27293f #62669d #ffffff #27293f     #27293f
 
 # Gaps
 gaps inner 5

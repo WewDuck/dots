@@ -19,6 +19,7 @@ programs = {
   environment.systemPackages = with pkgs; [
     grimblast
     qt5ct
+    pavucontrol
   ];
 
 }
