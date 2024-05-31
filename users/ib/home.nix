@@ -4,10 +4,10 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "libvirt" ];
     packages = with pkgs; [
-         armcord
          vesktop
          firefox
          floorp
+         brave
          neofetch
          hyfetch
          cava
@@ -19,8 +19,9 @@
          pfetch
          kate
          kcolorchooser
-         vlc
+#        vlc
          via
+         mpv
          rpi-imager
          wl-clipboard
          xclip
