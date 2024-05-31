@@ -22,7 +22,7 @@ lightdm = {
    greeters.slick.enable = true;
    };
 
-setupCommands = "export WLR_NO_HARDWARE_CURSORS=1";
+#setupCommands = "export WLR_NO_HARDWARE_CURSORS=1";
 };
 
 
