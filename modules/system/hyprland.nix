@@ -5,7 +5,6 @@
   
   hyprland.enable = true;  
   hyprlock.enable = true;
-  hypridle.enable = true;
 
   
   waybar = {
@@ -19,5 +18,9 @@
     qt5ct
     pavucontrol
   ];
+
+  services = {
+  hypridle.enable = true;
+  };
 
 }
