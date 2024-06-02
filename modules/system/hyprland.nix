@@ -3,7 +3,7 @@
 
   programs = { 
   
-  hyprland.enable = true;  
+# hyprland.enable = true;  
 
 # hyprlock.enable = true;
 
@@ -17,10 +17,11 @@
     grimblast
     qt5ct
     pavucontrol
+    hyprland
   ];
 
-  services = {
-  hypridle.enable = true;
-  };
+  #services = {
+  #hypridle.enable = true;
+  #};
 
 }
