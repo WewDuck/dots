@@ -19,8 +19,6 @@ programs = {
     grimblast
     qt5ct
     pavucontrol
-    nwg-look
-    nwg-displays
   ];
 
 }
