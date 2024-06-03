@@ -12,7 +12,7 @@
 	../../modules/system/xserver.nix
 	../../modules/system/audio.nix
 	../../modules/system/sway.nix
-#	../../modules/system/hyprland.nix
+	../../modules/system/hyprland.nix
 	../../users/ib/home.nix
 #	/home/ib/dots/users/ib/home.nix
 #	/home/ib/dots/modules/hm/themes/default.nix
