@@ -50,6 +50,7 @@
      p7zip
      go
      stow
+     inputs.home-manager.packages.${pkgs.system}.home-manager
    ];
 
 
