@@ -46,7 +46,7 @@
         nicotine-plus
         kdenlive
         transmission-qt
-        transmission
+#       transmission
         obs-studio
    ];
  };
