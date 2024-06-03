@@ -42,6 +42,9 @@
         modules = [
           # Import system profile
           ./hosts/desktop/default.nix
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake

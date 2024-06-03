@@ -14,7 +14,7 @@
    services.xserver.xkb.layout = "us";
 
 
- services.xserver.displayManager.gdm.enable = true;
+ services.xserver.displayManager.sddm.enable = true;
 #services.xserver.displayManager = {
 
 #lightdm = {
