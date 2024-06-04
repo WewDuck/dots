@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -35,7 +35,7 @@
    };
   };
 
-   environment.systemPackages = with nixpkgs.24.05; [
+   environment.systemPackages = with pkgs; [
      neovim
      wget
      curl
