@@ -35,7 +35,7 @@
    };
   };
 
-   environment.systemPackages = with pkgs; [
+   environment.systemPackages = with nixpkgs.24.05; [
      neovim
      wget
      curl
@@ -45,6 +45,7 @@
      fastfetch
      htop
      btop
+     screen
    ];
 	
    services.gitea = {
