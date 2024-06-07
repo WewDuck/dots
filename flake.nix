@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -13,7 +14,7 @@
 #   maxfetch.url = "github:jobcmax/maxfetch";
   };
 
-  outputs = {  self, nixpkgs, home-manager, nh, xremap, ... }@inputs:
+  outputs = {  self, nixpkgs, nixpkgs-stable, home-manager, nh, xremap, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};

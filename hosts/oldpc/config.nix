@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -45,6 +45,7 @@
      fastfetch
      htop
      btop
+     screen
    ];
 	
    services.gitea = {
