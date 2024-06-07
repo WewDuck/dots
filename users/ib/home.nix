@@ -1,12 +1,5 @@
 { config, pkgs, inputs, ... }:
 {
-#users.users.ib = {
-#   isNormalUser = true;
-#   extraGroups = [ "wheel" "libvirt" ];
-#   packages = with pkgs; [
-
-#   ];
-# };
 
  programs.home-manager.enable = true;
 # home-manager.users.ib = { pkgs, ... }: { 

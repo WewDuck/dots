@@ -2,6 +2,15 @@
 
 {
   
+  
+users.users.ib = {
+   isNormalUser = true;
+   extraGroups = [ "wheel" "libvirt" ];
+   packages = with pkgs; [
+
+   ];
+ };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
  
