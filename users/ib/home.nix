@@ -11,7 +11,6 @@
         vesktop
         firefox
         floorp
-        brave
         neofetch
         hyfetch
         cava
