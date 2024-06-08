@@ -2,16 +2,16 @@
   {
     # Imports
       imports = [
-	../../modules/system/etc.nix
-	../../modules/system/envvars.nix
+	../../modules/etc.nix
+	../../modules/envvars.nix
 #../../modules/system/kde.nix
-	../../modules/system/gaming.nix
-	../../modules/system/localization.nix
-     	../../modules/system/nvidia.nix
-	../../modules/system/shell.nix
-	../../modules/system/xserver.nix
-	../../modules/system/audio.nix
-	../../modules/system/cinnamon.nix
+	../../modules/gaming.nix
+	../../modules/localization.nix
+     	../../modules/nvidia.nix
+	../../modules/shell.nix
+	../../modules/xserver.nix
+	../../modules/audio.nix
+	../../modules/cinnamon.nix
 #	../../modules/system/sway.nix
 #../../users/ib/home.nix
 	./hardware-configuration.nix
