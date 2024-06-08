@@ -12,6 +12,7 @@
 	../../modules/xserver.nix
 	../../modules/audio.nix
 	../../modules/cinnamon.nix
+	../../modules/nh.nix
 #	../../modules/system/sway.nix
 #../../users/ib/home.nix
 	./hardware-configuration.nix
