@@ -47,6 +47,7 @@
      htop
      btop
      screen
+     unzip
    ];
 	
    services.gitea = {
