@@ -2,7 +2,7 @@
 {
     qt = {
         enable = true;
-        platformTheme.name = "gtk";
+        platformTheme.name = "qtct";
         style.name = "Catppuccin-Mocha-Standard-Lavender-Dark";
         style.package = pkgs.catppuccin;
     };

@@ -40,6 +40,7 @@
         transmission-qt
 #       transmission
         obs-studio
+        qt5ct
    ];
  };
 #};
