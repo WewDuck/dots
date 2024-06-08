@@ -48,9 +48,9 @@ nixpkgs.config = {
   allowUnfree = true;
 };
 
-#  imports = [
-#    ../../modules/hm/themes/default.nix
-# ];
+  imports = [
+    ./gtk.nix
+ ];
 
 
 }
