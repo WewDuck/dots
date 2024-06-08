@@ -11,6 +11,8 @@ users.users.ib = {
    ];
  };
 
+qt.style = "breeze";
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
  

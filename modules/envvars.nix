@@ -4,7 +4,7 @@
  environment.sessionVariables = {
   EDITOR = "neovim";
   WLR_NO_HARDWARE_CURSORS = "1";
-# QT_QPA_PLATFORMTHEME = "qt5ct";
+#  QT_QPA_PLATFORMTHEME = "qt5ct";
 # WLR_RENDERER = "vulkan";
 };
 

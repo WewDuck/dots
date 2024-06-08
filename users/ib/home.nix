@@ -45,6 +45,10 @@
  };
 #};
 
+sessionVariables = {
+  QT_QPA_PLATFORMTHEME = "qt5ct";
+};
+
 nixpkgs.config = {
   allowUnfree = true;
 };
