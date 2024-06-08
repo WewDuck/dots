@@ -11,7 +11,6 @@ gtk = {
     name = "Catppuccin-Mocha-Standard-Lavender-Dark";
     package = pkgs.catppuccin-gtk.override { variant="mocha"; };
   };
-};
 
 gtk3.extraConfig = {
   Settings = ''
@@ -23,5 +22,8 @@ gtk4.extraConfig = {
       gtk-application-prefer-dark-theme=1
               '';
   };
+
+};
+
 
 }
