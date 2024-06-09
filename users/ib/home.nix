@@ -42,12 +42,12 @@
         obs-studio
         qt5ct
    ];
+  sessionVariables = {
+    QT_QPA_PLATFORMTHEME = "qt5ct";
+  };
  };
 #};
 
-sessionVariables = {
-  QT_QPA_PLATFORMTHEME = "qt5ct";
-};
 
 nixpkgs.config = {
   allowUnfree = true;
