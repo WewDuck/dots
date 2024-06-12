@@ -5,7 +5,7 @@
   
 users.users.ib = {
    isNormalUser = true;
-   extraGroups = [ "wheel" "libvirt" ];
+   extraGroups = [ "wheel" "libvirt" "docker" ];
    packages = with pkgs; [
 
    ];
