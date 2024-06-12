@@ -42,7 +42,6 @@
         obs-studio
         qt5ct
         distrobox
-        docker
    ];
   sessionVariables = {
     QT_QPA_PLATFORMTHEME = "qt5ct";
