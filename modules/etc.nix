@@ -29,10 +29,6 @@ qt.style = "breeze";
   # Enable QMK
   hardware.keyboard.qmk.enable = true;
 
-  # Virtualisation
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
 
     # Generic packages I want regardless of machine or user
    environment.systemPackages = with pkgs; [
