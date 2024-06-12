@@ -13,6 +13,7 @@
 	../../modules/audio.nix
 	../../modules/cinnamon.nix
 	../../modules/nh.nix
+	../../modules/virtualisation.nix
 #	../../modules/system/sway.nix
 #../../users/ib/home.nix
 	./hardware-configuration.nix
