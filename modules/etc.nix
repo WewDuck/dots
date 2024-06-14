@@ -41,7 +41,6 @@ qt.style = "breeze";
      jdk17
      mlt
      procps
-     python3
      gcc
      ripgrep
      fd
