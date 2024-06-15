@@ -11,16 +11,14 @@ users.users.ib = {
    ];
  };
 
+qt.style = "breeze";
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
  
   # Networking 
   networking.networkmanager.enable = true; 
    
-  programs.nh = {
-    enable = true;
-    flake = "/home/ib/dots";
-  };
 
 
   # Fonts
@@ -69,7 +67,7 @@ users.users.ib = {
    programs.gnupg.agent = {
      enable = true;
      enableSSHSupport = true;
-     pinentryPackage = lib.mkForce pkgs.pinentry-qt;
+#    pinentryPackage = lib.mkForce pkgs.pinentry-qt;
    };
 
 }

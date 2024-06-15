@@ -11,7 +11,6 @@
         vesktop
         firefox
         floorp
-        brave
         neofetch
         hyfetch
         cava
@@ -41,17 +40,23 @@
         transmission-qt
 #       transmission
         obs-studio
+        qt5ct
    ];
+  sessionVariables = {
+    QT_QPA_PLATFORMTHEME = "qt5ct";
+  };
  };
 #};
+
 
 nixpkgs.config = {
   allowUnfree = true;
 };
 
-#  imports = [
-#    ../../modules/hm/themes/default.nix
-# ];
+  imports = [
+    ./gtk.nix
+    ./qt.nix
+ ];
 
 
 }
