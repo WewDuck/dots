@@ -42,7 +42,7 @@
         obs-studio
         qt5ct
         distrobox
-        (python312.withPackages (
+        (python311.withPackages (
           ps: with ps; [
             pygame
             pygame-gui
