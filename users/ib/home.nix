@@ -42,9 +42,14 @@
         obs-studio
         qt5ct
         distrobox
-        python312Packages.pygame
-        python312Packages.pygame-gui
-        python312Full
+        (python312.withPackages (
+          ps: with ps; [
+            pygame
+            pygame-gui
+            virtualenv
+          ];
+        )
+      )
    ];
   sessionVariables = {
     QT_QPA_PLATFORMTHEME = "qt5ct";
