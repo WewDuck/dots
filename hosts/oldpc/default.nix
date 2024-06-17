@@ -3,7 +3,7 @@
 
 imports = [
 ./config.nix
-../../modules/system/shell.nix
+#../../modules/system/shell.nix
 ];
 
 }

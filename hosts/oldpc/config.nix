@@ -41,11 +41,13 @@
      curl
      tree
      jdk17_headless
+     jdk8_headless
      git
      fastfetch
      htop
      btop
      screen
+     unzip
    ];
 	
    services.gitea = {
