@@ -47,8 +47,7 @@
             pygame
             pygame-gui
             virtualenv
-          ];
-        )
+          ]) 
       )
    ];
   sessionVariables = {
