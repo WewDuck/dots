@@ -42,7 +42,7 @@
         obs-studio
         qt5ct
         distrobox
-        (python311.withPackages (
+        (python312.withPackages (
           ps: with ps; [
             pygame
             virtualenv
