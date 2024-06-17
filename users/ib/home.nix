@@ -45,7 +45,6 @@
         (python311.withPackages (
           ps: with ps; [
             pygame
-            pygame-gui
             virtualenv
           ]) 
       )
