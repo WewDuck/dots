@@ -63,6 +63,7 @@ nixpkgs.config = {
   imports = [
     ./gtk.nix
     ./qt.nix
+    ./emacs.nix
  ];
 
 
