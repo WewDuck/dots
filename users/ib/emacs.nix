@@ -2,7 +2,7 @@
 {
 programs.emacs = {
     enable = true;
-    extraPackages = "epkgs: [ epkgs.evil epkgs.catppuccin-theme ]";
+    extraPackages = epkgs: [ epkgs.evil epkgs.catppuccin-theme ];
     extraConfig = ''
       (require 'evil)
       (evil-mode 1)
