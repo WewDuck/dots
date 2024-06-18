@@ -4,7 +4,7 @@
 services.sxhkd = {
     enable = true;
 
-    keyBindings = {
+    keybindings = {
       
     # generic
 

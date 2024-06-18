@@ -4,7 +4,7 @@
 xsession.windowManager.bspwm = {
     enable = true;
     extraConfigEarly = " pgrep -x sxhkd > /dev/null || sxhkd &
-    "
+    ";
 #  monitors = {
 #      DP-1 = [
 #        "1"
