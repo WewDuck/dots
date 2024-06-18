@@ -7,6 +7,10 @@ programs.alacritty = {
       window.dimensions = {
           lines = 30;
           columns = 110;
+          padding = {
+            x = 12;
+            y = 8;
+          };
       };
       font = {
         size = 11.0;
