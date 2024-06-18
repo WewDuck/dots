@@ -64,6 +64,8 @@ nixpkgs.config = {
     ./qt.nix
     ./emacs.nix
     ./alacritty.nix
+    ./sxhkd.nix
+    ./bspwm.nix
  ];
 
 

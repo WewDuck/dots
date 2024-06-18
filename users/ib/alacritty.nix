@@ -27,7 +27,7 @@ programs.alacritty = {
       colors = {
         # Catppuccin Mocha theme
         primary = {
-          background = "#181926";
+          background = "#181825";
           foreground = "#cdd6f4";
         };
         cursor = {
