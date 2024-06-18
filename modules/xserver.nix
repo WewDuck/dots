@@ -16,12 +16,13 @@
 
  services.xserver.displayManager = {
       lightdm.enable = true;
-      session = [
-         {
-            manage = "desktop";
-            start = "bspwm";
-         };
-      ];
+#      session = [
+#         {
+#            manage = "desktop";
+#            start = "bspwm";
+#         }
+#      ];
+      startx.enable = true;
    };
 #services.xserver.displayManager = {
 
