@@ -30,7 +30,6 @@
         xclip
         tldr
         typioca
-        alacritty
         foot
         kitty
         krita
@@ -64,6 +63,7 @@ nixpkgs.config = {
     ./gtk.nix
     ./qt.nix
     ./emacs.nix
+    ./alacritty.nix
  ];
 
 
