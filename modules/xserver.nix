@@ -19,7 +19,7 @@
       session = [
          {
             manage = "desktop";
-            start = "bspwm"
+            start = "bspwm";
          };
       ];
    };
