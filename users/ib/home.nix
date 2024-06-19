@@ -10,7 +10,7 @@
     packages = with pkgs; [
         vesktop
         firefox
-        floorp
+#       floorp
         neofetch
         hyfetch
         cava
