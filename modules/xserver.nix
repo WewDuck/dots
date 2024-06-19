@@ -15,16 +15,16 @@
 
 
  services.xserver.displayManager = {
-#     lightdm.enable = true;
+     lightdm.enable = true;
 #      session = [
 #         {
 #            manage = "desktop";
 #            start = "bspwm";
 #         }
 #      ];
-      sddm.enable = true;
-      startx.enable = true;
-      defaultSession = "plasmax11";
+#     sddm.enable = true;
+#     startx.enable = true;
+      defaultSession = "cinnamon";
    };
 #services.xserver.displayManager = {
 
