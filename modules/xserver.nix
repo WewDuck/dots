@@ -23,7 +23,7 @@
 #         }
 #      ];
      sddm.enable = true;
-#     startx.enable = true;
+     startx.enable = true;
    };
 #services.xserver.displayManager = {
 
