@@ -60,7 +60,7 @@ nixpkgs.config = {
 };
 
   imports = [
-    ./gtk.nix
+#   ./gtk.nix
 #   ./qt.nix
     ./emacs.nix
     ./alacritty.nix
