@@ -10,7 +10,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-   networking.hostName = "oldpc"; # Define your hostname.
+  nixpkgs.config.allowUnfree = true;
+
+   networking.hostName = "oldpc"; 
    networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
    time.timeZone = "Europe/Amsterdam";
@@ -40,14 +42,16 @@
      wget
      curl
      tree
-     jdk17_headless
-     jdk8_headless
+#    jdk17_headless
+#    jdk8_headless
      git
      fastfetch
      htop
      btop
      screen
      unzip
+     cfspeedtest
+     ookla-speedtest
    ];
 	
    services.gitea = {
