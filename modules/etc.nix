@@ -53,6 +53,7 @@ qt.style = "breeze";
      p7zip
      go
      stow
+     openssl_3_3
      inputs.home-manager.packages.${pkgs.system}.home-manager
    ];
 
