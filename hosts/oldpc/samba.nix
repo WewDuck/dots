@@ -4,7 +4,7 @@
 services.samba = {
 	enable = true;		
 	securityType = "user";
-	openFirewallv = true;
+	openFirewall = true;
 	extraConfig = ''
 		workgroup = WORKGROUP
 		server string = oldpc
