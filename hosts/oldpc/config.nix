@@ -70,6 +70,7 @@
   # Open ports in the firewall.
    networking.firewall.allowedTCPPorts = [ 25565 25556 1337 9090 ];
    networking.firewall.allowedUDPPorts = [ 25565 25556 ];
+   networking.firewall.allowPing = true;
 
   system.stateVersion = "23.11";
 
