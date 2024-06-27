@@ -53,6 +53,7 @@
      unzip
      cfspeedtest
      ookla-speedtest
+     gcc
    ];
 	
    services.gitea = {
