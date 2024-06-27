@@ -17,15 +17,9 @@
 
    time.timeZone = "Europe/Amsterdam";
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
    i18n.defaultLocale = "en_US.UTF-8";
    console = {
-     font = "Lat2-Terminus16";
      keyMap = "us";
-#    useXkbConfig = true; # use xkb.options in tty.
    };
 
    users.users = {
@@ -35,7 +29,14 @@
      packages = with pkgs; [
      ];
    };
-  };
+   JamesBond = {
+	isNormalUser = true;
+	extraGroups = [ "sambaers" ];
+   };
+};
+    users.groups = {
+	sambaers = { };
+    };
 
    environment.systemPackages = with pkgs; [
      neovim
@@ -52,6 +53,7 @@
      unzip
      cfspeedtest
      ookla-speedtest
+     gcc
    ];
 	
    services.gitea = {
@@ -76,6 +78,7 @@
   # Open ports in the firewall.
    networking.firewall.allowedTCPPorts = [ 25565 25556 1337 9090 ];
    networking.firewall.allowedUDPPorts = [ 25565 25556 ];
+   networking.firewall.allowPing = true;
 
   system.stateVersion = "23.11";
 

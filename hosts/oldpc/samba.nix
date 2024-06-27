@@ -1,0 +1,28 @@
+{...}:
+{
+
+services.samba = {
+	enable = true;		
+	securityType = "user";
+	openFirewall = true;
+	extraConfig = ''
+		workgroup = WORKGROUP
+		server string = oldpc
+		netbios name = oldpc
+		security = user
+	'';
+	shares = {
+		oldpc = {
+			path = "/mnt/samba/private";
+			browsable = "yes";
+			"read only" = "no";
+			"guest ok" = "no";
+			"create mask" = "0644";
+			"directory mask" = "0755";
+			"force group" = "sambaers"; 
+			"force user" = "JamesBond";
+		};
+	};
+
+};
+}
