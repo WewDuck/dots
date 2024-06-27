@@ -43,8 +43,6 @@
      wget
      curl
      tree
-#    jdk17_headless
-#    jdk8_headless
      git
      fastfetch
      htop

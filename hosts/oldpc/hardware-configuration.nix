@@ -23,6 +23,11 @@
       fsType = "vfat";
     };
 
+  fileSystems."/mnt/samba/private/2tb" = {
+      device = "a6f7f396-d7ac-48f4-9e2e-7669722e6823";
+      fsType = "ext64";
+    };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
