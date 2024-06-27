@@ -12,7 +12,7 @@ services.samba = {
 		security = user
 	'';
 	shares = {
-		private = {
+		oldpc = {
 			path = "/mnt/samba/private";
 			browsable = "yes";
 			"read only" = "no";
@@ -20,6 +20,7 @@ services.samba = {
 			"create mask" = "0644";
 			"directory mask" = "0755";
 			"force group" = "sambaers"; 
+			"force user" = "JamesBond";
 		};
 	};
 

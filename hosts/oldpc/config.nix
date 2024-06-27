@@ -29,7 +29,14 @@
      packages = with pkgs; [
      ];
    };
-  };
+   JamesBond = {
+	isNormalUser = true;
+	extraGroups = [ "sambaers" ];
+   };
+};
+    users.groups = {
+	sambaers = { };
+    };
 
    environment.systemPackages = with pkgs; [
      neovim
