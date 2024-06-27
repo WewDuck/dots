@@ -10,7 +10,7 @@ services.samba = {
 		server string = oldpc
 		netbios name = oldpc
 		security = user
-	''
+	'';
 	shares = {
 		private = {
 			path = "/mnt/samba/private";
