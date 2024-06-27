@@ -24,8 +24,9 @@
     };
 
   fileSystems."/mnt/samba/private/2tb" = {
-      device = "a6f7f396-d7ac-48f4-9e2e-7669722e6823";
-      fsType = "ext64";
+#     device = "/dev/disk/by-uuid/a6f7f396-d7ac-48f4-9e2e-7669722e6823";
+      device = "/dev/disk/by-partuuid/f722d6f8-01";
+      fsType = "ext4";
     };
 
   swapDevices = [ ];
