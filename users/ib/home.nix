@@ -8,9 +8,9 @@
     homeDirectory = "/home/ib"; 
     stateVersion = "23.11"; 
     packages = with pkgs; [
-        vesktop
+        webcord
         firefox
-#       floorp
+        floorp
         neofetch
         hyfetch
         cava
@@ -21,6 +21,8 @@
         cfspeedtest
         pfetch
         kate
+        nil
+        nodePackages_latest.bash-language-server
         kcolorchooser
         vlc
         via
