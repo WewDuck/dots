@@ -9,6 +9,7 @@
     stateVersion = "23.11"; 
     packages = with pkgs; [
         webcord
+        vesktop
         firefox
         floorp
         neofetch
