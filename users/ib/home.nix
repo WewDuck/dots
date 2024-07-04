@@ -8,7 +8,6 @@
     homeDirectory = "/home/ib"; 
     stateVersion = "23.11"; 
     packages = with pkgs; [
-        webcord
         vesktop
         firefox
         floorp
@@ -63,7 +62,7 @@ nixpkgs.config = {
 };
 
   imports = [
-#   ./gtk.nix
+   ./gtk.nix
 #   ./qt.nix
     ./emacs.nix
     ./alacritty.nix
