@@ -6,6 +6,7 @@
       modesetting.enable = true;
 #     open = true;
       package = config.boot.kernelPackages.nvidiaPackages.production;
+      forceFullCompositionPipeline = true;
     };
     
 }
