@@ -29,7 +29,7 @@
   environment = {
     systemPackages = with pkgs; [
       prismlauncher
-      osu-lazer
+#     osu-lazer
       wineWowPackages.stagingFull
       gzdoom
 #     nxengine-evo
