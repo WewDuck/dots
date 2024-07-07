@@ -70,6 +70,23 @@
         ];
       };
 
+        macmini = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs; }; 
+        modules = [
+          # Import system profile
+          ./hosts/macmini
+          # Enable flakes and nix command
+          { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
+          # Pin registry to flake
+          { nix.registry.nixpkgs.flake = nixpkgs; }
+          # Pin channel to flake 
+          { nix.nixPath = [ "nixpkgs=configflake:nixpkgs" ]; }
+
+        ];
+      };
+
+
 #         oldpc = nixpkgs.lib.nixosSystem {
 #      inherit system;
 #      specialArgs = { inherit inputs; }; 
