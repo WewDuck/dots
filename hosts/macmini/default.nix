@@ -10,6 +10,7 @@ imports = [
 ../../modules/shell.nix
 ../../modules/xserver.nix
 ../../modules/gaming.nix
+../../modules/kde.nix
 
 ];
 
