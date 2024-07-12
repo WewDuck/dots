@@ -55,7 +55,7 @@
    ];
 	
    services.gitea = {
-	enable = true;
+	enable = false;
    };
 
    services.cockpit = {

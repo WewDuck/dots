@@ -29,6 +29,10 @@
       fsType = "ext4";
     };
 
+  fileSystems."/mnt/samba/private/WD" = {
+      device = "/dev/disk/by-partuuid/89f57030-655b-4a35-8dd3-306fb7e99506";
+      fsType = "ext4";
+    };
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
