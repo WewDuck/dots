@@ -25,4 +25,10 @@ services.samba = {
 	};
 
 };
+
+
+services.samba-wsdd = {
+  enable = true;
+  openFirewall = true;
+};
 }
