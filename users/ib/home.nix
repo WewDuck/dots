@@ -20,9 +20,7 @@
         ookla-speedtest
         cfspeedtest
         pfetch
-        kate
         nil
-        nodePackages_latest.bash-language-server
         kcolorchooser
         vlc
         via
@@ -43,12 +41,6 @@
         obs-studio
         qt5ct
         distrobox
-        (python312.withPackages (
-          ps: with ps; [
-            pygame
-            virtualenv
-          ]) 
-      )
    ];
   sessionVariables = {
     QT_QPA_PLATFORMTHEME = "qt5ct";
@@ -68,6 +60,7 @@ nixpkgs.config = {
     ./alacritty.nix
     ./sxhkd.nix
     ./bspwm.nix
+    ./dev.nix
  ];
 
 
