@@ -59,8 +59,8 @@ nixpkgs.config = {
     ./emacs.nix
     ./alacritty.nix
     ./sxhkd.nix
-    ./bspwm.nix
-    ./dev.nix
+#    ./bspwm.nix
+#    ./dev.nix
  ];
 
 
