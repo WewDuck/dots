@@ -60,7 +60,7 @@ nixpkgs.config = {
     ./alacritty.nix
     ./sxhkd.nix
 #    ./bspwm.nix
-#    ./dev.nix
+     ./dev.nix
  ];
 
 
