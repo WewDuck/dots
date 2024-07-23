@@ -11,11 +11,13 @@ home.packages = with pkgs; [
       nodePackages_latest.bash-language-server
       kate
   ];
-}
 
-programs.tmux = {
+  programs.tmux = {
       enable = true;
       extraConfig = "
         set-window-option -g mode-keys vi
       ";
   };
+
+}
+
