@@ -12,3 +12,10 @@ home.packages = with pkgs; [
       kate
   ];
 }
+
+programs.tmux = {
+      enable = true;
+      extraConfig = "
+        set-window-option -g mode-keys vi
+      ";
+  };
