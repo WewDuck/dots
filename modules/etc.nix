@@ -30,33 +30,33 @@ qt.style = "breeze";
   hardware.keyboard.qmk.enable = true;
 
 
-    # Generic packages I want regardless of machine or user
-   environment.systemPackages = with pkgs; [
-     docker
-     neovim 
-     git
-     htop
-     btop
-     jdk8
-     jdk17
-     mlt
-     procps
-     gcc
-     ripgrep
-     fd
-     lazygit
-     unzip
-     tree
-     wget
-     gh
-     rar
-     p7zip
-     go
-     stow
-     arch-install-scripts
-     openssl_3_3
-     inputs.home-manager.packages.${pkgs.system}.home-manager
-   ];
+  # Generic packages I want regardless of machine or user
+  environment.systemPackages = with pkgs; [
+    docker
+    neovim
+    git
+    htop
+    btop
+    jdk8
+    jdk17
+    mlt
+    procps
+    gcc
+    ripgrep
+    fd
+    lazygit
+    unzip
+    tree
+    wget
+    gh
+    rar
+    p7zip
+    go
+    stow
+    arch-install-scripts
+    openssl_3_3
+    inputs.home-manager.packages.${pkgs.system}.home-manager
+  ];
 
 
   # Some programs need SUID wrappers, can be configured further or are
