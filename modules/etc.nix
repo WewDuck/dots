@@ -34,6 +34,7 @@ qt.style = "breeze";
   environment.systemPackages = with pkgs; [
     docker
     neovim
+    vim
     git
     htop
     btop
