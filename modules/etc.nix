@@ -33,6 +33,7 @@ qt.style = "breeze";
   # Generic packages I want regardless of machine or user
   environment.systemPackages = with pkgs; [
     docker
+    gnumake
     neovim
     vim
     git
