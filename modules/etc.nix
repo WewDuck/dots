@@ -34,6 +34,7 @@ qt.style = "breeze";
   environment.systemPackages = with pkgs; [
     docker
     gnumake
+    grub2
     neovim
     vim
     git
