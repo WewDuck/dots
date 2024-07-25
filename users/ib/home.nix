@@ -37,10 +37,10 @@
         nicotine-plus
         kdenlive
         transmission-qt
-#       transmission
         obs-studio
         qt5ct
         distrobox
+        clementine
    ];
   sessionVariables = {
     QT_QPA_PLATFORMTHEME = "qt5ct";
