@@ -32,7 +32,8 @@
 #     osu-lazer
       wineWowPackages.stagingFull
       gzdoom
-#     nxengine-evo
+      nxengine-evo
+      frogatto
       mangohud
     ];
   };
