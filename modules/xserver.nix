@@ -23,7 +23,7 @@
 #         }
 #      ];
 #     startx.enable = true;
-   };
+#   };
 services.xserver.displayManager = {
 
 lightdm = {
