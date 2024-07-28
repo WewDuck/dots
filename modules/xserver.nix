@@ -14,7 +14,7 @@
    services.xserver.xkb.layout = "us";
 
 
- services.xserver.displayManager = {
+# services.xserver.displayManager = {
 #    lightdm.enable = true;
 #      session = [
 #         {
@@ -22,14 +22,14 @@
 #            start = "bspwm";
 #         }
 #      ];
-     startx.enable = true;
+#     startx.enable = true;
    };
-#services.xserver.displayManager = {
+services.xserver.displayManager = {
 
-#lightdm = {
-#   enable = true;
-#   greeters.slick.enable = true;
-#   };
+lightdm = {
+   enable = true;
+   greeters.slick.enable = true;
+   };
 
 #setupCommands = "export WLR_NO_HARDWARE_CURSORS=1";
 #};
