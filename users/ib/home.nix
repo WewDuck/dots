@@ -61,7 +61,8 @@ nixpkgs.config = {
     ./alacritty/catppuccin-alacritty.nix
     ./sxhkd.nix
 #    ./bspwm.nix
-     ./dev.nix
+    ./hyprland.nix
+    ./dev.nix
  ];
 
 
