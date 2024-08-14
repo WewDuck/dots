@@ -13,7 +13,8 @@
 	../../modules/xserver.nix
 	../../modules/audio.nix
   ../../modules/cinnamon.nix
-  ../../modules/xfce.nix
+#  ../../modules/xfce.nix
+	../../modules/gnome.nix
 	../../modules/nh.nix
 	../../modules/virtualisation.nix
 #	../../modules/system/sway.nix
