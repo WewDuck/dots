@@ -12,7 +12,7 @@
 	../../modules/shell.nix
 	../../modules/xserver.nix
 	../../modules/audio.nix
-  ../../modules/cinnamon.nix
+#  ../../modules/cinnamon.nix
 #  ../../modules/xfce.nix
 	../../modules/gnome.nix
 	../../modules/nh.nix
