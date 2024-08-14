@@ -41,6 +41,7 @@
         qt5ct
         distrobox
         clementine
+        gnomeExtensions.open-bar
    ];
   sessionVariables = {
     QT_QPA_PLATFORMTHEME = "qt5ct";
