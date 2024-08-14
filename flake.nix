@@ -11,10 +11,12 @@
     
     nh.url = "github:viperml/nh";
 
+    catppuccin.url = "github:catppuccin/nix";
+
 #   maxfetch.url = "github:jobcmax/maxfetch";
   };
 
-  outputs = {  self, nixpkgs, nixpkgs-stable, home-manager, nh, xremap, ... }@inputs:
+  outputs = {  self, nixpkgs, nixpkgs-stable, home-manager, nh, xremap, catppuccin, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -27,6 +29,7 @@
         modules = [
           # Import home-manager profile
           ./users/ib/home.nix
+          catppuccin.homeManagerModules.catppuccin
           # Enable flakes and nix command
           { nix = { package = pkgs.nix; settings.experimental-features = [ "nix-command" "flakes" ];}; }
           # Pin registry to flake

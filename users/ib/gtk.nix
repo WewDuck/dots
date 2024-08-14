@@ -1,5 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
+imports = [inputs.catppuccin.homeManagerModules.catppuccin];
 
 gtk = {
   enable = true;
@@ -7,10 +8,17 @@ gtk = {
     name = "Tela-Purple-Dark";
     package = pkgs.tela-icon-theme;
   };
-  theme = {
-    name = "Catppuccin-Mocha-Standard-Lavender-Dark";
-    package = pkgs.catppuccin-gtk.override { variant="mocha"; };
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+    accent = "lavender";
+    size = "standard";
+    tweaks = ["normal"];
   };
+#  theme = {
+#    name = "Catppuccin-Mocha-Standard-Lavender-Dark";
+#    package = pkgs.catppuccin-gtk.override { variant="mocha"; };
+# };
 
 gtk3.extraConfig = {
   Settings = ''
