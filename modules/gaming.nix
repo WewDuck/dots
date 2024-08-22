@@ -33,7 +33,6 @@
       wineWowPackages.stagingFull
       gzdoom
       nxengine-evo
-      frogatto
       mangohud
     ];
   };
