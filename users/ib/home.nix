@@ -41,6 +41,7 @@
         qt5ct
         distrobox
         clementine
+        telegram-desktop
         gnomeExtensions.open-bar
    ];
   sessionVariables = {
