@@ -29,11 +29,11 @@ in
   };
 
     # Set systemd timeout
-  systemd.extraConfig = "
+systemd.extraConfig = "
   DefaultTimeoutStopSec=10s
   DefaultTimeoutStartSec=10s
 ";
   
   # Set Linux Kernel Version.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }
