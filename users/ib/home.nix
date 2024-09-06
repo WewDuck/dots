@@ -60,7 +60,7 @@ nixpkgs.config = {
 #   ./qt.nix
     ./emacs.nix
     ./alacritty/alacritty.nix
-    ./alacritty/catppuccin-alacritty.nix
+#   ./alacritty/catppuccin-alacritty.nix
     ./sxhkd.nix
 #    ./bspwm.nix
     ./hyprland.nix
