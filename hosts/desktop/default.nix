@@ -15,7 +15,6 @@
 #	../../modules/cinnamon.nix
 #	../../modules/xfce.nix
 #	../../modules/gnome.nix
-	../../modules/cosmic.nix
 	../../modules/nh.nix
 	../../modules/virtualisation.nix
 #	../../modules/system/sway.nix

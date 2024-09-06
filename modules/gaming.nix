@@ -20,7 +20,7 @@
   };
 
   # Vaapi
-  hardware.graphics.extraPackages = with pkgs; [
+  hardware.opengl.extraPackages = with pkgs; [
     vaapiVdpau
   ];
 

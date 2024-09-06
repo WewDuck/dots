@@ -13,15 +13,10 @@
 
     catppuccin.url = "github:catppuccin/nix";
 
-    nixos-cosmic = {
-      url = "github:lilyinstarlight/nixos-cosmic";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
 #   maxfetch.url = "github:jobcmax/maxfetch";
   };
 
-  outputs = {  self, nixpkgs, nixpkgs-stable, home-manager, nh, xremap, catppuccin, nixos-cosmic, ... }@inputs:
+  outputs = {  self, nixpkgs, nixpkgs-stable, home-manager, nh, xremap, catppuccin, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -53,7 +48,7 @@
           ./hosts/desktop/default.nix
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
-          nixos-cosmic.nixosModules.default
+
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake
