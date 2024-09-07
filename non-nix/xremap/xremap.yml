@@ -1,0 +1,6 @@
+modmap:
+  - name: Global binding
+    remap:
+      CapsLock: Ctrl_L
+      Alt_L: Win_L
+      Ctrl_L: Alt_L
