@@ -11,6 +11,8 @@
         vesktop
         firefox
         floorp
+        chromium
+        telegram-desktop
         neofetch
         hyfetch
         cava
@@ -41,7 +43,6 @@
         qt5ct
         distrobox
         clementine
-        telegram-desktop
         gnomeExtensions.open-bar
    ];
   sessionVariables = {
