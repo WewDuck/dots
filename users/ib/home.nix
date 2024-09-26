@@ -38,7 +38,7 @@
         rofi-wayland
         nicotine-plus
         kdenlive
-        transmission-qt
+        transmission_4-qt
         obs-studio
         qt5ct
         distrobox

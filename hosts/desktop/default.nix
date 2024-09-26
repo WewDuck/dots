@@ -8,7 +8,7 @@
 	../../modules/kde-x11.nix
 	../../modules/gaming.nix
 	../../modules/localization.nix
-	../../modules/nvidia.nix
+#	../../modules/nvidia.nix
 	../../modules/shell.nix
 	../../modules/xserver.nix
 	../../modules/audio.nix
