@@ -34,6 +34,7 @@
       gzdoom
       nxengine-evo
       mangohud
+      oversteer
     ];
   };
 }
