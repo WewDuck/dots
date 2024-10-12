@@ -36,6 +36,7 @@
         kitty
         krita
         rofi-wayland
+	wofi
         nicotine-plus
         kdenlive
         transmission_4-qt
@@ -62,9 +63,9 @@ nixpkgs.config = {
     ./emacs.nix
     ./alacritty/alacritty.nix
 #   ./alacritty/catppuccin-alacritty.nix
-    ./sxhkd.nix
+#    ./sxhkd.nix
 #    ./bspwm.nix
-    ./hyprland.nix
+#    ./hyprland.nix
     ./dev.nix
  ];
 
