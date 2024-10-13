@@ -35,6 +35,7 @@
       nxengine-evo
       mangohud
       oversteer
+      protontricks
     ];
   };
 }

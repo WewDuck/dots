@@ -42,6 +42,7 @@
         transmission_4-qt
         obs-studio
         qt5ct
+        swaybg
         distrobox
         clementine
         gnomeExtensions.open-bar
