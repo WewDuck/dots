@@ -11,7 +11,7 @@
     ../../modules/xserver.nix
     ../../modules/audio.nix
     ../../modules/nh.nix
-    ../../virtualisation.nix
+    ../../modules/virtualisation.nix
     ./hardware-configuration.nix
     ./boot.nix
   ];
