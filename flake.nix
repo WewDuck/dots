@@ -57,12 +57,12 @@
           { nix.nixPath = [ "nixpkgs=configflake:nixpkgs" ]; }
         ];
       };
-            ip = nixpkgs.lib.nixosSystem {
+            ipad = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; }; 
         modules = [
           # Import system profile
-          ./hosts/ip
+          ./hosts/ideapad
           # Enable flakes and nix command
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           # Pin registry to flake
