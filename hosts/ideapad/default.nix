@@ -10,7 +10,7 @@
     ../../modules/shell.nix
     ../../modules/xserver.nix
     ../../modules/audio.nix
-    ../../nh.nix
+    ../../modules/nh.nix
     ../../virtualisation.nix
     ./hardware-configuration.nix
     ./boot.nix
