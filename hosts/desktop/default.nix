@@ -6,7 +6,7 @@
 	../../modules/envvars.nix
   ../../modules/kde.nix
 	../../modules/kde-x11.nix
-	../../modules/hyprland.nix
+#	../../modules/hyprland.nix
 	../../modules/gaming.nix
 	../../modules/localization.nix
 #	../../modules/nvidia.nix
