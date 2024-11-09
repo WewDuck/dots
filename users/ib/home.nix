@@ -41,7 +41,6 @@
         kdenlive
         transmission_4-qt
         obs-studio
-        qt5ct
         swaybg
    ];
 #  sessionVariables = {
@@ -57,7 +56,7 @@ nixpkgs.config = {
 
   imports = [
 #  ./gtk.nix
-   ./qt.nix
+#   ./qt.nix
     ./emacs.nix
     ./alacritty/alacritty.nix
 #   ./alacritty/catppuccin-alacritty.nix

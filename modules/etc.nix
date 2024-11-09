@@ -5,7 +5,7 @@
   
 users.users.ib = {
    isNormalUser = true;
-   extraGroups = [ "wheel" "libvirt" "input" ];
+   extraGroups = [ "wheel" "libvirt" "input" "video" ];
    packages = with pkgs; [
 
    ];
