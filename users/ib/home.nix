@@ -47,11 +47,11 @@
         clementine
         gnomeExtensions.open-bar
    ];
-  sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "qt5ct";
-  };
- };
-#};
+#  sessionVariables = {
+#    QT_QPA_PLATFORMTHEME = "qt5ct";
+#  };
+# };
+};
 
 
 nixpkgs.config = {
@@ -60,7 +60,7 @@ nixpkgs.config = {
 
   imports = [
 #  ./gtk.nix
-#   ./qt.nix
+   ./qt.nix
     ./emacs.nix
     ./alacritty/alacritty.nix
 #   ./alacritty/catppuccin-alacritty.nix
