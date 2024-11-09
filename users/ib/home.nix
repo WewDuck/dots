@@ -43,9 +43,6 @@
         obs-studio
         qt5ct
         swaybg
-        distrobox
-        clementine
-        gnomeExtensions.open-bar
    ];
 #  sessionVariables = {
 #    QT_QPA_PLATFORMTHEME = "qt5ct";

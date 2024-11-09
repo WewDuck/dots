@@ -5,7 +5,7 @@
   
 users.users.ib = {
    isNormalUser = true;
-   extraGroups = [ "wheel" "libvirt" "docker" "input" ];
+   extraGroups = [ "wheel" "libvirt" "input" ];
    packages = with pkgs; [
 
    ];
@@ -32,7 +32,6 @@ qt.style = "breeze";
 
   # Generic packages I want regardless of machine or user
   environment.systemPackages = with pkgs; [
-    docker
     gnumake
     grub2
     neovim

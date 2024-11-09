@@ -15,12 +15,12 @@
   # Enable OpenGL
    hardware.graphics = {
     enable = true;
-#   driSupport = true;
+#    driSupport = true;
     enable32Bit = true;
   };
 
   # Vaapi
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.extraPackages = with pkgs; [
     vaapiVdpau
   ];
 
