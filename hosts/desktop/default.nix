@@ -18,6 +18,7 @@
 #	../../modules/gnome.nix
 	../../modules/nh.nix
 	../../modules/virtualisation.nix
+	../../modules/ld.nix
 #	../../modules/system/sway.nix
 	./hardware-configuration.nix
 	./boot.nix
