@@ -41,16 +41,13 @@
         kdenlive
         transmission_4-qt
         obs-studio
-        qt5ct
-        distrobox
-        clementine
-        gnomeExtensions.open-bar
+        swaybg
    ];
-  sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "qt5ct";
-  };
- };
-#};
+#  sessionVariables = {
+#    QT_QPA_PLATFORMTHEME = "qt5ct";
+#  };
+# };
+};
 
 
 nixpkgs.config = {

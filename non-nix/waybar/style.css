@@ -54,11 +54,11 @@ button:hover {
 */
 
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
+/* #pulseaudio:hover {
     background-color: #a37800;
     border-top: 3px solid #9999ff;
     border-bottom: 3px solid #9999ff;
-}
+}*/
 
 #workspaces button {
     padding: 0 5px;
@@ -270,9 +270,9 @@ label:focus {
 } */
 
 
-#tray {
-    background-color: #2980b9;
-}
+/*#tray {
+    background-color: #010015;
+}*/
 
 
 #tray > .passive {

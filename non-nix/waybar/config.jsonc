@@ -30,7 +30,7 @@
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
+//        "keyboard-state",
         "hyprland/language",
         "battery",
         "battery#bat2",
@@ -162,7 +162,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "{ipaddr}/{cidr}  󰈀",
         "tooltip-format": "{essid}\n{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠  ",
@@ -174,7 +174,7 @@
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "        {volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",

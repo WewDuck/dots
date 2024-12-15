@@ -2,10 +2,10 @@
 {
 
 wayland.windowManager.hyprland = {
-  enable = true;
+  enable = false;
  };
 programs.waybar = {
-  enable = true;
+  enable = false;
  };
 
 

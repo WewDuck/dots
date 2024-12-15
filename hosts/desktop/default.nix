@@ -6,7 +6,7 @@
 	../../modules/envvars.nix
   ../../modules/kde.nix
 	../../modules/kde-x11.nix
-	../../modules/hyprland.nix
+#	../../modules/hyprland.nix
 	../../modules/gaming.nix
 	../../modules/localization.nix
 #	../../modules/nvidia.nix
@@ -18,6 +18,7 @@
 #	../../modules/gnome.nix
 	../../modules/nh.nix
 	../../modules/virtualisation.nix
+	../../modules/ld.nix
 #	../../modules/system/sway.nix
 	./hardware-configuration.nix
 	./boot.nix
