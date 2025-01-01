@@ -41,6 +41,7 @@ qt.style = "breeze";
     btop
     jdk8
     jdk17
+    jdk23
     mlt
     procps
     gcc
