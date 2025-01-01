@@ -27,7 +27,7 @@ qt.style = "breeze";
      nerd-fonts.fira-mono
      nerd-fonts.roboto-mono
      nerd-fonts.sauce-code-pro
-     nerd-fonts.melso-lg
+     nerd-fonts.meslo-lg
  ];
 
 
