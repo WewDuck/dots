@@ -23,8 +23,13 @@ qt.style = "breeze";
 
   # Fonts
   fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraMono" "RobotoMono" "SourceCodePro" "Meslo" ]; })
+#(nerdfonts.override { fonts = [ "FiraMono" "RobotoMono" "SourceCodePro" "Meslo" ]; })
+     nerd-fonts.fira-mono
+     nerd-fonts.roboto-mono
+     nerd-fonts.sauce-code-pro
+     nerd-fonts.meslo-lg
  ];
+
 
   # Enable QMK
   hardware.keyboard.qmk.enable = true;
@@ -41,6 +46,7 @@ qt.style = "breeze";
     btop
     jdk8
     jdk17
+    jdk23
     mlt
     procps
     gcc
