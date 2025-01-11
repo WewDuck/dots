@@ -36,4 +36,11 @@ systemd.extraConfig = "
   
   # Set Linux Kernel Version.
   boot.kernelPackages = pkgs.linuxPackages_zen;
+
+  swapDevices = [ {
+    device = "/swapfile";
+    size = 8*1024;
+
+ } ];
+
 }

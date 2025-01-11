@@ -65,6 +65,6 @@ nixpkgs.config = {
 #    ./hyprland.nix
     ./dev.nix
  ];
-+
+
 
 }
