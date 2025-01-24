@@ -3,15 +3,15 @@
 
 services.samba = {
 	enable = true;		
-	securityType = "user";
+	settings.global.security = "user";
 	openFirewall = true;
-	extraConfig = ''
-		workgroup = WORKGROUP
-		server string = oldpc
-		netbios name = oldpc
-		security = user
-	'';
-	shares = {
+#	extraConfig = ''
+#		workgroup = WORKGROUP
+#		server string = oldpc
+#		netbios name = oldpc
+#		security = user
+#	'';
+	settings = {
 		oldpc = {
 			path = "/mnt/samba/private";
 			browsable = "yes";

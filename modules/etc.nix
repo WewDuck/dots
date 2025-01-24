@@ -61,6 +61,7 @@ qt.style = "breeze";
     p7zip
     go
     stow
+    geekbench
     arch-install-scripts
     openssl_3_3
     inputs.home-manager.packages.${pkgs.system}.home-manager
