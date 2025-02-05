@@ -49,3 +49,4 @@ programs.alacritty.settings.colors = {
         white = "#C7C7C7";
     };
 };
+}
