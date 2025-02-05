@@ -4,11 +4,11 @@ programs.alacritty.settings.colors = {
     # Ayu Dark theme
     primary = {
         background = "#0A0E14";
-        foreground = "#B3B1AD";
+        foreground = "#e7e6e4";
     };
     cursor = {
         text = "#01060E";
-        cursor = "#FAE994";
+        cursor = "#e7e6e4";
     };
     vi_mode_cursor = {
         text = "#01060E";
