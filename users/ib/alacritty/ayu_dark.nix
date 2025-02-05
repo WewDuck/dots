@@ -1,4 +1,5 @@
 {...}:
+{
 programs.alacritty.settings.colors = {
     # Ayu Dark theme
     primary = {
