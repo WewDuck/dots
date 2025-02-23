@@ -42,12 +42,20 @@
         transmission_4-qt
         obs-studio
         swaybg
+        ncmpcpp
    ];
 #  sessionVariables = {
 #    QT_QPA_PLATFORMTHEME = "qt5ct";
 #  };
 # };
+
+
 };
+
+  services.mpd = {
+    enable = true;
+
+  };
 
 
 nixpkgs.config = {

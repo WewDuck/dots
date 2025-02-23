@@ -22,6 +22,7 @@
 #	../../modules/system/sway.nix
 	./hardware-configuration.nix
 	./boot.nix
+	./secret.nix
       ];
 
   

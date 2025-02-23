@@ -12,6 +12,7 @@ let
     installPhase = "cp -r customize/nixos $out";
   };
 in
+
 {
   boot.loader = { 
     efi = {
@@ -42,5 +43,6 @@ systemd.extraConfig = "
     size = 8*1024;
 
  } ];
-
 }
+
+

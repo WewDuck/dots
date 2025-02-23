@@ -77,5 +77,6 @@ qt.style = "breeze";
 #    pinentryPackage = lib.mkForce pkgs.pinentry-qt;
    };
 
+
 }
 
