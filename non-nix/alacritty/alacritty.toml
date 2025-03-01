@@ -3,13 +3,12 @@ import = [
 ]
 
 [font]
-size=11.5
+size=11.0
 normal = { family = "MesloLGS Nerd Font Mono", style = "Regular"  }
 
 [window]
 padding = { x = 6, y = 6 }
-opacity = 0.95
 
 [cursor]
-style = { shape = "beam", blinking = "on" }
+style = { shape = "beam", blinking = "off" }
 

@@ -9,8 +9,8 @@ programs.alacritty = {
           columns = 110;
         };
       window.padding = {
-            x = 12;
-            y = 8;
+            x = 6;
+            y = 6;
         };
      
       font = {
@@ -23,6 +23,10 @@ programs.alacritty = {
         family = "MesloLGS Nerd Font Mono";
         style = "Bold";
         };  
+      };
+
+      cursor = {
+        style = "Beam";
       };
 
     };
