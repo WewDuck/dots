@@ -64,6 +64,7 @@ qt.style = "breeze";
     geekbench
     arch-install-scripts
     openssl_3_3
+    mosh
     inputs.home-manager.packages.${pkgs.system}.home-manager
   ];
 

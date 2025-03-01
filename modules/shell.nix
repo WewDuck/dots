@@ -15,7 +15,6 @@
     };
 
   environment.systemPackages = with pkgs; [
-    nushell
     sqlite
   ];
 
