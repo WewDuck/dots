@@ -2,7 +2,7 @@
 {
 
 # Shell configs
-  users.defaultUserShell = pkgs.nushell;
+  users.defaultUserShell = pkgs.fish;
 
   # Fish shell
   programs.fish = {
@@ -16,6 +16,7 @@
 
   environment.systemPackages = with pkgs; [
     nushell
+    sqlite
   ];
 
 }
