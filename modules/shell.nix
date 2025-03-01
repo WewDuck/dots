@@ -3,6 +3,7 @@
 
 # Shell configs
   users.defaultUserShell = pkgs.fish;
+  users.users.ib.shell = pkgs.fish;
 
   # Fish shell
   programs.fish = {
