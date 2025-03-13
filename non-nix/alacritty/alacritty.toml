@@ -5,6 +5,7 @@ normal = { family = "MesloLGS Nerd Font Mono", style = "Regular"  }
 
 [window]
 padding = { x = 6, y = 6 }
+dimensions = { lines = 30, columns = 115 }
 
 [cursor]
 style = { shape = "beam", blinking = "off" }
