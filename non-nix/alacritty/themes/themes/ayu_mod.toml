@@ -1,0 +1,54 @@
+# Colors (Ayu Dark)
+
+# Default colors
+[colors.primary]
+background = '#181818'
+foreground = '#e7e6e4'
+
+# Cursor colors
+[colors.cursor]
+text = '#01060E'
+cursor = '#e7e6e4'
+
+# Vi mode cursor colors
+[colors.vi_mode_cursor]
+text = '#01060E'
+cursor = '#FAE994'
+
+# Selection colors
+[colors.selection]
+text = '#01060E'
+background = '#FAE994'
+
+# Normal colors
+[colors.normal]
+black   = '#333333'
+red     = '#EA6C73'
+green   = '#91B362'
+yellow  = '#F9AF4F'
+blue    = '#53BDFA'
+magenta = '#a27ff2'
+cyan    = '#90E1C6'
+white   = '#f2f2f2'
+
+# Bright colors
+[colors.bright]
+black   = '#686868'
+red     = '#F07178'
+green   = '#C2D94C'
+yellow  = '#FFB454'
+blue    = '#59C2FF'
+magenta = '#bba2f6'
+cyan    = '#95E6CB'
+white   = '#FFFFFF'
+
+# Dim colors
+[colors.dim]
+black   = '#01060E'
+red     = '#EA6C73'
+green   = '#91B362'
+yellow  = '#F9AF4F'
+blue    = '#53BDFA'
+magenta = '#FAE994'
+cyan    = '#90E1C6'
+white   = '#C7C7C7'
