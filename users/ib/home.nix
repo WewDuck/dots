@@ -23,7 +23,7 @@
         cfspeedtest
         pfetch
         nil
-        kcolorchooser
+        kdePackages.kcolorchooser
         vlc
         via
         mpv

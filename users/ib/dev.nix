@@ -9,7 +9,7 @@ home.packages = with pkgs; [
       )
       godot_4
       nodePackages_latest.bash-language-server
-      kate
+      kdePackages.kate
   ];
 
   programs.tmux = {

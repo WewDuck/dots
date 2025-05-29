@@ -63,7 +63,7 @@ qt.style = "breeze";
     stow
     geekbench
     arch-install-scripts
-    openssl_3_3
+    openssl_3
     mosh
     inputs.home-manager.packages.${pkgs.system}.home-manager
   ];
